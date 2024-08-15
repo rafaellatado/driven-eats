@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driven Eats</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="content-container">
+
+    <div class="content-transparency"></div>
+
+    <div class="content">
+
+      <header>
+        <h1>DrivenEats</h1>
+        <h3>Sua comida em 6 minutos</h3>
+      </header>
+
+      <div class="all-products">
+
+        <h1 class="seu-prato">Primeiro, seu prato</h1>
+
+        <div class="scroll-one">
+
+          <div class="container-produto comida" onclick="escolheComida(this)">
+            <div>
+              <img src="public/pf_carne.jpg" alt="Foto de uma refeição">
+              <p class="p-title">Bife à cavalo</p>
+              <p class="p-sub-title">Acompanhado de arroz, feijão, batata frita e salada</p>
+            </div>
+            <div class="price-container">
+              <p class="p-price">R$ 21,99</p>
+              <ion-icon class="icon comida" name="checkmark-circle"></ion-icon>
+            </div>
+          </div>
+
+          <div class="container-produto comida" onclick="escolheComida(this)">
+            <div>
+              <img src="public/pf_frango.jpg" alt="Foto de uma refeição">
+              <p class="p-title">Filé de frango</p>
+              <p class="p-sub-title">Acompanhado de arroz, feijão, farofa e salada</p>
+            </div>
+            <div class="price-container">
+              <p class="p-price">R$ 19,99</p>
+              <ion-icon class="icon comida" name="checkmark-circle"></ion-icon>
+            </div>
+          </div>
+
+          <div class="container-produto comida" onclick="escolheComida(this)">
+            <div>
+              <img src="public/pf_calabresa.png" alt="Foto de uma refeição">
+              <p class="p-title">Linguiça acebolada</p>
+              <p class="p-sub-title">Acompnado de arroz, feijão e batata frita</p>
+            </div>
+            <div class="price-container">
+              <p class="p-price">R$ 18,99</p>
+              <ion-icon class="icon comida" name="checkmark-circle"></ion-icon>
+            </div>
+          </div>
+
+        </div>
+
+        <h1 class="sua-bebida">Agora, sua bebida</h1>
+
+        <div class="scroll-two">
+
+          <div class="container-produto bebida" onclick="escolheBebida(this)">
+            <div>
+              <img src="public/coca.png" alt="Foto de uma bebida">
+              <p class="p-title">Coca-cola latinha</p>
+              <p class="p-sub-title">Lata 350ml</p>
+            </div>
+            <div class="price-container">
+              <p class="p-price">R$ 4,90</p>
+              <ion-icon class="icon bebida" name="checkmark-circle"></ion-icon>
+            </div>
+          </div>
+
+          <div class="container-produto bebida" onclick="escolheBebida(this)">
+            <div>
+              <img src="public/suco.png" alt="Foto de uma bebida">
+              <p class="p-title">Suco de laranja</p>
+              <p class="p-sub-title">Suco da fruta 300ml</p>
+            </div>
+            <div class="price-container">
+              <p class="p-price">R$ 8,90</p>
+              <ion-icon class="icon bebida" name="checkmark-circle"></ion-icon>
+            </div>
+          </div>
+
+          <div class="container-produto bebida" onclick="escolheBebida(this)">
+            <div>
+              <img src="public/fanta.png" alt="Foto de uma bebida">
+              <p class="p-title">Fanta laranja</p>
+              <p class="p-sub-title">Lata 350ml</p>
+            </div>
+            <div class="price-container">
+              <p class="p-price">R$ 4,70</p>
+              <ion-icon class="icon bebida" name="checkmark-circle"></ion-icon>
+            </div>
+          </div>
+
+        </div>
+
+        <h1 class="sua-sobremesa">Por fim, sua sobremesa</h1>
+
+        <div class="scroll-three">
+
+          <div class="container-produto sobremesa" onclick="escolheSobremesa(this)">
+            <div>
+              <img src="public/pudim.jpg" alt="Foto de uma subremesa">
+              <p class="p-title">Pudim de leite</p>
+              <p class="p-sub-title">Pedaço</p>
+            </div>
+            <div class="price-container">
+              <p class="p-price">R$ 7,90</p>
+              <ion-icon class="icon sobremesa" name="checkmark-circle"></ion-icon>
+            </div>
+          </div>
+
+          <div class="container-produto sobremesa" onclick="escolheSobremesa(this)">
+            <div>
+              <img src="public/brownie.jpg" alt="Foto de uma subremesa">
+              <p class="p-title">Brownie</p>
+              <p class="p-sub-title">Especialidade da casa</p>
+            </div>
+            <div class="price-container">
+              <p class="p-price">R$ 8,70</p>
+              <ion-icon class="icon sobremesa" name="checkmark-circle"></ion-icon>
+            </div>
+          </div>
+
+          <div class="container-produto sobremesa" onclick="escolheSobremesa(this)">
+            <div>
+              <img src="public/mouse.jpg" alt="Foto de uma subremesa">
+              <p class="p-title">Musse de maracujá</p>
+              <p class="p-sub-title">Potinho</p>
+            </div>
+            <div class="price-container">
+              <p class="p-price">R$ 9,90</p>
+              <ion-icon class="icon sobremesa" name="checkmark-circle"></ion-icon>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="button-container one">
+        <button class="button-one">Selecione os 3 itens<br> para fechar o pedido</button>
+      </div>
+
+      <div class="button-container two">
+        <button onClick="fecharPedido()" class="button-two">Fechar pedido</button>
+      </div>
+
+    </div>
+
+    <div class="confirmar-pedido-container">
+      <div class="confirmar-pedido">
+        <h4>Confirme seu pedido</h4>
+        <div class="nome-preco-container">
+          <h4 class="nome-prato"></h4>
+          <h4 class="preco-prato"></h4>
+        </div>
+        <div class="nome-preco-container">
+          <h4 class="nome-bebida"></h4>
+          <h4 class="preco-bebida"></h4>
+        </div>
+        <div class="nome-preco-container">
+          <h4 class="nome-sobremesa"></h4>
+          <h4 class="preco-sobremesa"></h4>
+        </div>
+        <div class="nome-preco-container">
+          <h4 class="total-title">TOTAL</h4>
+          <h4 class="somatorio-valor"></h4>
+        </div>
+        <button onClick="pedir()" class="confirmar-button1">Tudo certo, pode pedir!</button>
+        <button onClick="cancelarPedido()" class="confirmar-button2">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <script src="./script.js"></script>
+</body>
+</html>
