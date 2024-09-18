@@ -4,7 +4,7 @@ You can view the Driven Eats App live at <a href="https://rafaellatado.github.io
 
 ## Technologies Used
 
-- JavaScript: To add interactivity through DOM manipulation.
+- JavaScript: For interactivity.
 - HTML: For structuring the content of the website.
 - CSS: For styling and layout.
 - Git: Tracks changes and manages the project's codebase.
